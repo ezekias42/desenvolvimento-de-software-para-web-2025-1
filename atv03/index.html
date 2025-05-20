@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Old School RuneScape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-mode">
+    <nav>
+        <img src="assets/logo.png" alt="Logo" id="logo">
+        <menu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <button type="button" onclick="colorMode()"><img src="assets/light-mode-svgrepo-com.svg" alt="Click to turn dark mode on!" id="toggle-img"></button>
+        </menu>
+    </nav>
+    <main>
+        <div id="banner">
+            <h1>Old School RunesCape</h1>
+            <a href="https://oldschool.runescape.com/launcher" target="_blank"><button type="button">Baixe
+                    aqui</button></a>
+        </div>
+        <div id="content">
+            <h2>What is Old School RuneScape?</h2>
+            <p>Old School RuneScape is a massively multiplayer online role-playing game (MMORPG), developed and
+                published by
+                Jagex. The game was released on 16 February 2013. When Old School RuneScape launched, it began as an
+                August
+                2007 version of the game RuneScape, which was highly popular prior to the launch of RuneScape 3. The
+                game
+                has since received engine improvements, new content, and quality of life updates largely decided by the
+                community via in-game polls. Despite originally having a smaller development team and a slower update
+                schedule relative to RuneScape, Old School RuneScape is now the more popular version of the game, with
+                an
+                all-time record of 231,719 concurrent players in December 2024. A mobile version for Android and iOS was
+                released in October 2018.</p>
+            <h2>About gameplay</h2>
+            <p>Old School RuneScape is an MMORPG with adventure elements. It features a persistent world in which
+                players can interact with each other and the environment. The basic mechanics are largely the same as
+                RuneScape on 10 August 2007. The player controls a single (human) character and can interact with NPCs,
+                objects, and entities in the game world by left-clicking or right-clicking and selecting an option from
+                the object's right-click context menu. Users can gain experience points (XP) and level up individual
+                skills, making their playable character more powerful in various ways.
+                There is a large selection of skills, grouped mainly between three different categories: combat,
+                gathering, and artisan. Combat skills, which are Attack, Strength, Defence, Ranged, Magic, Prayer, and
+                Hitpoints, allow the player to defeat enemy monsters or other players in certain circumstances. The
+                gathering skills, which include Mining, Fishing, and Woodcutting, allow the player to gather in game
+                resources to use or sell. The artisan skills include skills such as Cooking, Crafting, Fletching and
+                Smithing. The input mechanics are primarily point-and-click. The game runs on a tick-based system where
+                the game state refreshes every 600 milliseconds.</p>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>© Jagex. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    function colorMode() {
+        var element = document.body;
+        var image = document.querySelector("#toggle-img");
+        if (element.classList.contains("dark-mode")){
+            element.classList.remove("dark-mode");
+            element.classList.add("light-mode");
+            image.src = 'assets/dark-mode-svgrepo-com.svg';
+        } else if (element.classList.contains("light-mode")) {
+            element.classList.remove("light-mode");
+            element.classList.add("dark-mode");
+            image.src = 'assets/light-mode-svgrepo-com.svg';
+        }
+    }
+</script>
+
+</html>
